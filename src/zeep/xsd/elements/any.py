@@ -167,7 +167,7 @@ class Any(Base):
         if self.accepts_multiple and isinstance(value, list):
 
             # Validate bounds
-            if len(value) < self.min_occurs:
+            if len(value) < self.min_occurs and False:
                 raise exceptions.ValidationError(
                     "Expected at least %d items (minOccurs check)" % self.min_occurs)
             if self.max_occurs != 'unbounded' and len(value) > self.max_occurs:

@@ -58,8 +58,8 @@ with open('README.rst') as fh:
         '^.. start-no-pypi.*^.. end-no-pypi', '', fh.read(), flags=re.M | re.S)
 
 setup(
-    name='zeep',
-    version='3.1.0',
+    name='lessvalidated_zeep',
+    version='3.1.1',
     description='A modern/fast Python SOAP client based on lxml / requests',
     long_description=long_description,
     author="Michael van Tellingen",

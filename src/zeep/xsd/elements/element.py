@@ -219,7 +219,7 @@ class Element(Base):
         if self.accepts_multiple and isinstance(value, list):
 
             # Validate bounds
-            if len(value) < self.min_occurs:
+            if len(value) < self.min_occurs and False:
                 raise exceptions.ValidationError(
                     "Expected at least %d items (minOccurs check) %d items found." % (self.min_occurs, len(value)),
                     path=render_path)
