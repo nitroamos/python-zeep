@@ -77,7 +77,7 @@ setup(
     },
     entry_points={},
     package_dir={'': 'src'},
-    packages=['lessvalidated_zeep'],
+    packages=['zeep'],
     include_package_data=True,
     license='MIT',
     classifiers=[
